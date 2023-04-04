@@ -46,7 +46,10 @@ basicNN + geom_point() + ggtitle("SIMS vs ARM") + theme(plot.title = element_tex
 The data shows a simulation on the arm strength expectation on the workers. Most of the points are centered around 50-100, which means it's expected for the workers to be around that arm strength.
 
 ### Numerical results
-
+```{r}
+cor(SIMS~ARM, data=data)
+```
+There is no difference on the correlation between the two. When the number is larger, the larger the correlation is between the two. The number is close to 1, so correspondence is minimal.
 
 ### Inferential  (Build model.1)
 
