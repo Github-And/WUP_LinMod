@@ -52,6 +52,11 @@ cor(SIMS~ARM, data=data)
 There is no difference on the correlation between the two. When the number is larger, the larger the correlation is between the two. The number is close to 1, so correspondence is minimal.
 
 ### Inferential  (Build model.1)
+```{r}
+model.1 <- lm(SIMS~ARM,data=data)
+summary.lm(model.1)
+```
+The equation of the line is SIMS=0.054563xARM-4.095160. The coefficient is positive, meaning the line increases and makes it move from the bottom left of the graph to the top right.
 
 #### Predict at target point
 
