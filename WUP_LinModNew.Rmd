@@ -43,6 +43,8 @@ basicNN <- ggplot(data,aes(y=SIMS,x=ARM))
 basicNN + geom_point() + ggtitle("SIMS vs ARM") + theme(plot.title = element_text(hjust = 0.5, size = 20))
 ```
   
+The data shows a simulation on the arm strength expectation on the workers. Most of the points are centered around 50-100, which means it's expected for the workers to be around that arm strength.
+
 ### Numerical results
 
 
