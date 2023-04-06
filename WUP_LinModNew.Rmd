@@ -49,7 +49,7 @@ The data shows a simulation on the arm strength expectation on the workers. Most
 ```{r}
 cor(SIMS~ARM, data=data)
 ```
-There is no difference on the correlation between the two. When the number is larger, the larger the correlation is between the two. The number is close to 1, so correspondence is minimal.
+There is no difference on the correlation between SIMS and ARM. When the number is larger, the larger the correlation is between the two. The number is close to 1, so correspondence is minimal.
 
 ### Inferential  (Build model.1)
 ```{r}
@@ -86,7 +86,10 @@ basicGrip + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_
 The data shows a simulation on the grip strength expectation of workers. The points are mostly centered on the 100-150 grip range, with someone falling behind the middle of 50-100 and directly on the 100 range.
 
 ### Numerical results 
-
+```{r}
+cor(SIMS~GRIP, data=data)
+```
+For comparison, the SIMS vs ARMS numerical data is 0.6860073 and the one here is 0.6398458 for SIMS vs GRIP. SIMS vs ARMS is higher than SIMS vs GRIP, meaning SIMS vs ARMS is more accurate than the other due to SIMS vs GRIP having less correlation with a smaller value.
 
 ### Inferential  (Build model.2)
   
