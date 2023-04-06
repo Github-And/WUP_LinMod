@@ -56,7 +56,7 @@ There is no difference on the correlation between SIMS and ARM. When the number 
 model.1 <- lm(SIMS~ARM,data=data)
 summary.lm(model.1)
 ```
-The equation of the line is SIMS=0.054563xARM-4.095160. The coefficient is positive, meaning the line increases and makes it move from the bottom left of the graph to the top right.
+The equation of the line is SIMS=0.054563xARM-4.095160. The coefficient is positive, meaning the line increases and starts from the bottom left of the graph to the top right.
 
 #### Predict at target point
 ```{r}
@@ -92,7 +92,11 @@ cor(SIMS~GRIP, data=data)
 For comparison, the SIMS vs ARMS numerical data is 0.6860073 and the one here is 0.6398458 for SIMS vs GRIP. SIMS vs ARMS is higher than SIMS vs GRIP, meaning SIMS vs ARMS is more accurate than the other due to SIMS vs GRIP having less correlation with a smaller value.
 
 ### Inferential  (Build model.2)
-  
+```{r}
+model.2 <- lm(SIMS~GRIP,data=data)
+summary.lm(model.2)
+``` 
+Inferential data shows us the equation of the line which is SIMS=0.045463xGRIP-4.809675. The coefficient of the equation is positive, meaning it starts from the bottom left and ends near the top right of the graph.
 
 #### predict model.2 at target point
 
