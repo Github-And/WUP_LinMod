@@ -99,6 +99,10 @@ summary.lm(model.2)
 Inferential data shows us the equation of the line which is SIMS=0.045463xGRIP-4.809675. The coefficient of the equation is positive, meaning it starts from the bottom left and ends near the top right of the graph.
 
 #### predict model.2 at target point
+```{r}
+predict(model.2, tgtpoint, interval = c("prediction"))
+```
+The table shows the predicted target point is -0.5361543. The confidence level is 95%, so the value will be between -3.107961 and 2.035652.
 
 #### now add the model fit to our plot for model.2
   
