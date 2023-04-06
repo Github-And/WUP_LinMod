@@ -70,7 +70,7 @@ This table shows the predicted target point is 0.7063836. At a 95% confidence in
 basicNN + geom_point() + ggtitle("SIMS vs ARM") + theme(plot.title = element_text(hjust = 0.5, size = 20)) + geom_smooth(method=lm)
 ```  
 
-This new scatter plot uses the predicted data from the previous results. It shows where exactly on the graph the predicted data is expected to fulfill the prediction.
+This new scatter plot uses the predicted data calculated from the previous results. It shows where exactly on the graph the predicted data is expected to produce the expected results.
 
 ## Model 2 SIM~GRIP
 
