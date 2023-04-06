@@ -75,7 +75,15 @@ This new scatter plot uses the predicted data calculated from the previous resul
 ## Model 2 SIM~GRIP
 
 ### Now add in scatterplot
+```{r}
+basicGrip <- ggplot(data,aes(y=SIMS,x=GRIP))
+```
 
+```{r}
+basicGrip + geom_point() + ggtitle("SIMS vs GRIP") + theme(plot.title = element_text(hjust = 0.5, size = 20))
+```
+
+The data shows a simulation on the grip strength expectation of workers. The points are mostly centered on the 100-150 grip range, with someone falling behind the middle of 50-100 and directly on the 100 range.
 
 ### Numerical results 
 
