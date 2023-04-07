@@ -145,7 +145,10 @@ The P-value for this data is 0.000004994. Meaning if there was no differences be
 ```{r}
 anova(model.2,model.3)
 ```
-The P-value for this comparison is 0.000000001495. If there were no differences between the modles, it would only have a 0.000000001495% chance of doing so. Model 2 has 145 degrees of freedom meanwhile model 3 has 144 degrees of freedom. The residual sum of squares has model 2 listed at 243 residual errors and model 3 188 residual errors. The plots for ARM+GRIP is more accurate by 54.639 points for the sum of squares.
+The P-value for this comparison is 0.000000001495. If there were no differences between the models, it would only have a 0.000000001495% chance of doing so. Model 2 has 145 degrees of freedom meanwhile model 3 has 144 degrees of freedom. The residual sum of squares has model 2 listed at 243 residual errors and model 3 188 residual errors. The plots for ARM+GRIP is more accurate by 54.639 points for the sum of squares.
 
 ## Informally compare Model.1 with model.2
-
+```{r}
+anova(model.1,model.2)
+```
+For this last comparison, we are comparing ARM and GRIP individually. The residual sum of squares has model 1 at almost 218 residual errors and model 2 at 243 residual errors. The difference here is -25.189 meaning model 1 is more accurate than model 2.Ultimately, looking at ARM+GRIP is more accurate than just looking at them individually.
