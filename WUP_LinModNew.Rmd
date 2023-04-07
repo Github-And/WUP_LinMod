@@ -115,7 +115,10 @@ Using the target point data from the previous calculation, the line shows where 
 
 ### Numerical results (cor)
 
-`
+```{r}
+cor(SIMS~ARM+GRIP, data=data)
+```
+This is the result we get when combining both ARM and GRIP. The correlation for this is higher than comparing ARM or GRIP individually. Since SIMS~ARM is 0.6860073 and SIMS~GRIP is 0.6398458, SIMS~ARM+GRIP is more accurate due to having better correlation.
   
 ### Inferential  (Build 2-dimentional model.3)
 
