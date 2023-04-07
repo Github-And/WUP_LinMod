@@ -121,7 +121,12 @@ cor(SIMS~ARM+GRIP, data=data)
 This is the result we get when combining both ARM and GRIP. The correlation for this is higher than comparing ARM or GRIP individually. Since SIMS~ARM is 0.6860073 and SIMS~GRIP is 0.6398458, SIMS~ARM+GRIP is more accurate due to having better correlation.
   
 ### Inferential  (Build 2-dimentional model.3)
-
+```{r}
+model.3 <- lm(SIMS~ARM+GRIP,data=data)
+summary.lm(model.3)
+``` 
+Inferential data shows us the equation of the plane for all three data points which is SIMS=0.037311xARM + 0.024470xGRIP-5.433871.
+ 
 #### predict model.3 at target point
   
 
